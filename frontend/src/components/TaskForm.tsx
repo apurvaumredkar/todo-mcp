@@ -18,7 +18,7 @@ import {
 import { DateTimePicker } from '@mui/x-date-pickers/DateTimePicker';
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
-import { Add as AddIcon, Close as CloseIcon } from '@mui/icons-material';
+import { Add as AddIcon } from '@mui/icons-material';
 import { Task, TaskCreate, TaskStatus, TaskPriority } from '../types/task';
 import dayjs, { Dayjs } from 'dayjs';
 
