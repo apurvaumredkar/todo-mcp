@@ -1,0 +1,45 @@
+version: '3.8'
+
+services:
+  backend-dev:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: agentic-todo-backend-dev
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend/app:/app/app
+      - sqlite-data-dev:/app/data
+    environment:
+      - DATABASE_URL=sqlite:////app/data/todos.db
+      - CORS_ORIGINS=http://localhost:5173,http://localhost:3000
+    networks:
+      - todo-network-dev
+    restart: unless-stopped
+    command: ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000", "--reload"]
+
+  frontend-dev:
+    image: node:20-alpine
+    container_name: agentic-todo-frontend-dev
+    working_dir: /app
+    ports:
+      - "5173:5173"
+    volumes:
+      - ./frontend:/app
+    environment:
+      - VITE_API_URL=http://localhost:8000
+    networks:
+      - todo-network-dev
+    command: sh -c "npm install && npm run dev -- --host"
+    depends_on:
+      - backend-dev
+    restart: unless-stopped
+
+volumes:
+  sqlite-data-dev:
+    driver: local
+
+networks:
+  todo-network-dev:
+    driver: bridge
