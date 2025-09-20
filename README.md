@@ -1,6 +1,17 @@
 # Agentic Todo Application
 
-A modern, full-stack todo application built with FastAPI, React, and Docker. Features a colorful Material-UI interface with real-time updates and comprehensive task management capabilities. Designed for future MCP (Model Context Protocol) integration with Claude Desktop.
+A modern, full-stack todo application showcasing best practices in web development with FastAPI, React, and Docker. This project demonstrates a complete end-to-end solution with a beautiful Material-UI interface, real-time updates, comprehensive task management, and future-ready MCP (Model Context Protocol) integration capabilities.
+
+## 🚀 What Makes This Special
+
+This isn't just another todo app - it's a showcase of modern development practices:
+
+- **Production-Ready Architecture**: Fully containerized with Docker Compose for easy deployment
+- **Modern Tech Stack**: FastAPI + React with TypeScript for type safety and developer experience
+- **Beautiful UI**: Colorful, responsive Material-UI design with smooth animations
+- **Real-time Updates**: Automatic polling keeps all clients synchronized
+- **API-First Design**: Complete REST API with automatic OpenAPI documentation
+- **Claude Desktop Ready**: Includes MCP (Model Context Protocol) server specifically designed for Claude Desktop integration, enabling AI-powered task management through natural language commands
 
 ## Features
 
@@ -26,8 +37,10 @@ A modern, full-stack todo application built with FastAPI, React, and Docker. Fea
 - **FastAPI**: Modern Python web framework with automatic API documentation
 - **SQLAlchemy**: ORM for database operations
 - **SQLite**: Lightweight, file-based database
-- **Pydantic**: Data validation and serialization
-- **Uvicorn**: ASGI server for Python
+- **Pydantic**: Data validation and serialization with settings management
+- **Uvicorn**: ASGI server for Python with standard extras
+- **Python-multipart**: File upload support for FastAPI
+- **Python-dotenv**: Environment variable management
 
 ### Frontend
 - **React 18**: Latest React with hooks
@@ -36,6 +49,13 @@ A modern, full-stack todo application built with FastAPI, React, and Docker. Fea
 - **React Query**: Server state management with caching
 - **Vite**: Fast build tool with HMR
 - **Dayjs**: Date manipulation library
+
+### MCP Server (Claude Desktop Integration)
+- **Model Context Protocol SDK**: Official SDK for MCP server implementation
+- **TypeScript**: Type-safe server development
+- **Node.js**: Runtime environment for the MCP server
+- **Axios**: HTTP client for API communication with the todo backend
+- **TSX**: TypeScript execution and development tool
 
 ### Infrastructure
 - **Docker**: Containerization for consistent deployment
@@ -52,7 +72,7 @@ A modern, full-stack todo application built with FastAPI, React, and Docker. Fea
 
 1. **Clone the repository**:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/your-username/agentic-todo.git
    cd agentic-todo
    ```
 
@@ -148,7 +168,7 @@ agentic-todo/
 │   ├── vite.config.ts      # Vite configuration
 │   └── Dockerfile          # Frontend container
 │
-├── mcp-server/             # Future MCP integration
+├── mcp-server/             # MCP server for Claude Desktop integration
 ├── docker-compose.yml      # Production orchestration
 ├── docker-compose.dev.yml  # Development orchestration
 └── README.md              # This file
@@ -231,11 +251,12 @@ CREATE TABLE tasks (
 
 ## Future Enhancements (Phase 2)
 
-### MCP Integration
-- Model Context Protocol server for Claude Desktop
-- Tools for task management via Claude
-- Docker container for MCP server
-- Integration documentation
+### Claude Desktop Integration
+- **MCP Server**: Complete Model Context Protocol server specifically built for Claude Desktop
+- **Natural Language Task Management**: Create, update, and manage tasks through conversational AI commands
+- **Intelligent Task Processing**: Let Claude help categorize, prioritize, and organize your tasks
+- **Containerized MCP Server**: Ready-to-deploy Docker container for seamless Claude Desktop integration
+- **Comprehensive Documentation**: Step-by-step setup guide for connecting with Claude Desktop
 
 ### Planned Features
 - Task search functionality
@@ -248,22 +269,26 @@ CREATE TABLE tasks (
 - Recurring tasks
 - Task dependencies
 
-## Contributing
+## 🤝 Contributing
+
+Contributions are welcome! Whether you're fixing bugs, adding features, or improving documentation:
 
 1. Fork the repository
-2. Create a feature branch
-3. Commit your changes
-4. Push to the branch
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## License
+## 📄 License
 
-MIT License - feel free to use this project for your own purposes.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## Support
+## 📞 Support
 
-For issues, questions, or suggestions, please open an issue on the GitHub repository.
+If you find this project helpful, please give it a ⭐!
+
+For questions or issues, please open an issue on the GitHub repository.
 
 ---
 
-Built with dedication to modern web development practices and designed for extensibility.
+**Built with ❤️ to showcase modern web development practices and designed for extensibility.**

@@ -4,7 +4,7 @@ import { createInterface } from 'readline';
 
 const mcp = spawn('node', ['dist/index.js'], {
   stdio: ['pipe', 'pipe', 'pipe'],
-  cwd: 'C:\\Users\\apoor\\vaspian-demo-todo\\agentic-todo\\mcp-server'
+  cwd: process.cwd()
 });
 
 const rl = createInterface({
