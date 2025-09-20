@@ -37,25 +37,29 @@ This isn't just another todo app - it's a showcase of modern development practic
 - **FastAPI**: Modern Python web framework with automatic API documentation
 - **SQLAlchemy**: ORM for database operations
 - **SQLite**: Lightweight, file-based database
-- **Pydantic**: Data validation and serialization with settings management
-- **Uvicorn**: ASGI server for Python with standard extras
+- **Pydantic**: Data validation and serialization
+- **Pydantic Settings**: Configuration management through environment variables
+- **Uvicorn[standard]**: ASGI server for Python with standard extras
 - **Python-multipart**: File upload support for FastAPI
-- **Python-dotenv**: Environment variable management
+- **Python-dotenv**: Environment variable loading from .env files
 
 ### Frontend
 - **React 18**: Latest React with hooks
 - **TypeScript**: Type-safe development
-- **Material-UI v5**: Modern component library
-- **React Query**: Server state management with caching
+- **Material-UI v5**: Modern component library with icons and date pickers
+- **Emotion**: CSS-in-JS styling solution for Material-UI
+- **Tanstack React Query**: Server state management with caching and polling
+- **Axios**: HTTP client for API communication
 - **Vite**: Fast build tool with HMR
-- **Dayjs**: Date manipulation library
+- **Dayjs**: Lightweight date manipulation library
 
 ### MCP Server (Claude Desktop Integration)
-- **Model Context Protocol SDK**: Official SDK for MCP server implementation
+- **Model Context Protocol SDK**: Official Anthropic SDK for MCP server implementation
 - **TypeScript**: Type-safe server development
-- **Node.js**: Runtime environment for the MCP server
 - **Axios**: HTTP client for API communication with the todo backend
+- **Dotenv**: Environment variable management
 - **TSX**: TypeScript execution and development tool
+- **Node.js**: Runtime environment for the MCP server
 
 ### Infrastructure
 - **Docker**: Containerization for consistent deployment
@@ -72,7 +76,7 @@ This isn't just another todo app - it's a showcase of modern development practic
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/your-username/agentic-todo.git
+   git clone https://github.com/apurvaumredkar/agentic-todo.git
    cd agentic-todo
    ```
 
