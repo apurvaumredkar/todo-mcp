@@ -3,8 +3,8 @@
 - Typescript MCP implementation
 - React+Vite frontend in Material UI
 - FastAPI backend
-- Containerized for Docker
+- Docker containerized
 
 ---
 
-Vibe-coded using Claude Code.
+Vibe-coded with Claude Code.
